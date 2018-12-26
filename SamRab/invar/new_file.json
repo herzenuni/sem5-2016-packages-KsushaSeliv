@@ -1,0 +1,16 @@
+{
+    "all_guests": [
+        {
+            "guests_name": "Ksenia",
+            "guests_surname": "Selivanova",
+            "guests_age": 20,
+            "guests_country": "ms.ksus@gmail.com"
+        },
+        {
+            "guests_name": "Ktoto",
+            "guests_surname": "Esho",
+            "guests_age": 25,
+            "guests_country": "ktoto@gmail.com"
+        }
+    ]
+}
