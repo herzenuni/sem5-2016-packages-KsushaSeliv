@@ -186,36 +186,34 @@ math.sqrt(25)
 1.2 Создание пользовательского пакета для приложения «Гостевая книга» («Регистрация на конференцию») с прототипами методов, позволяющих взаимодействовать с JSON-файлом (создание, удаление, переименование, чтение, запись). Формирование отчета по практическому заданию и публикация его в портфолио.
 
 ```python
-class GuestBook:
+class GuestBook():
 
     def __init__(self):
         self.guests = list()
 
 
-    def add(self, name, surname, age, country):
-        self.guests.append({"guests_name": name,
-           "guests_surname": surname,
-           "guests_age": age,
-           "guests_country": country})
+    def add(self, name, surname, age, country): #добавляем человечка с нужными нам параметрами(имя,фамилия,возраст,страна)
+        self.guests.append({"guests_name": name,"guests_surname": surname, "guests_age": age, "guests_country": country})
     
-    def udal(self, name):
+    def udal(self, name): #тут удаляем человечка по нужному нам параметру, в данном случае у нас страна
         for guests in self.guests:
             if guests.get("guests_country") == country: 
                 self.guests.remove(guests) 
 
-    def zapis(self):
+    def zapis(self): #записываем всё в файлик
         import json
-        with open("./new_file.json", 'a') as file:
-            json_data = { "all_guests": self.guests }
+        with open("file1.json", 'a') as file:
+            json_data = { "Guests": self.guests }
             file.write(json.dumps(json_data, indent=4))
             
 if __name__ == "__main__":
     GuestBook = GuestBook()
     GuestBook.add("Ksenia", "Selivanova", 20, "ms.ksus@gmail.com")
     GuestBook.add("Ktoto", "Esho", 25, "ktoto@gmail.com")
+    
     GuestBook.zapis()
 ```
-
+![alt](https://github.com/herzenuni/sem5-2016-packages-KsushaSeliv/blob/master/SamRab/invar/14.JPG)
 
 ## Вариативное задание
 
