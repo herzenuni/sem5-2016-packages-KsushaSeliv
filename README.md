@@ -208,8 +208,8 @@ class GuestBook():
             
 if __name__ == "__main__":
     GuestBook = GuestBook()
-    GuestBook.add("Ksenia", "Selivanova", 20, "ms.ksus@gmail.com")
-    GuestBook.add("Ktoto", "Esho", 25, "ktoto@gmail.com")
+    GuestBook.add("Ksenia", "Selivanova", 20, "Russia")
+    GuestBook.add("Ktoto", "Esho", 25, "Russia")
     
     GuestBook.zapis()
 ```
